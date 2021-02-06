@@ -1,4 +1,3 @@
-
 /**
  * Esta clase permite la mantencion de pacientes
  * 
@@ -12,18 +11,21 @@ public class Paciente{
     private String apellidoMaterno;
     private int edad;
     private boolean enfermedad;
-
+    private String[] enfermedades = new String[3];
+    
     public Paciente(
         String nombre,
         String apellidoPaterno,
         String apellidoMaterno,
         int edad,
-        boolean enfermedad){
+        boolean enfermedad,
+        String[] enfermedades){
         this.nombre = nombre;
         this.apellidoPaterno = apellidoPaterno;
         this.apellidoMaterno = apellidoMaterno;
         this.edad = edad;
         this.enfermedad = enfermedad;
+        this.enfermedades = enfermedades;
     }
     
     public String getNombre(){
@@ -66,12 +68,27 @@ public class Paciente{
         this.enfermedad = enfermedad;
     }
     
+    public String[] getEnfermedades(){
+        return this.enfermedades;
+    }
+    
+    public void setEnfermedades(String[] enfermedades){
+        this.enfermedades = enfermedades;
+    }
+    
+    
     public void getReporte(){
         System.out.println("-----Inicio-----");
         System.out.println("Nombre Completo: " + this.nombre + " " + this.apellidoPaterno + " " + this.apellidoMaterno);
         
         if(this.enfermedad){
-            System.out.println("Enfermedad: " + "si tiene enfermedad");
+            System.out.println("Enfermedad: " + "Si tiene enfermedad");
+            System.out.println("Listado de enfermedades");
+            
+            for(int x = 0; x<=2; x++){
+                System.out.println("    -" + enfermedades[x]);
+            }
+            
         } else {
             System.out.println("Enfermedad: " + "no tiene enfermedad");
         }

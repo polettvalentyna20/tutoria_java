@@ -1,14 +1,18 @@
 #BlueJ class context
 comment0.target=Paciente
 comment0.text=\n\ Esta\ clase\ permite\ la\ mantencion\ de\ pacientes\n\ \n\ @author\ Paulette\ \n\ @version\ 06-02-2021\n
-comment1.params=nombre\ apellidoPaterno\ apellidoMaterno\ edad\ enfermedad
-comment1.target=Paciente(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ boolean)
+comment1.params=nombre\ apellidoPaterno\ apellidoMaterno\ edad\ enfermedad\ enfermedades
+comment1.target=Paciente(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ boolean,\ java.lang.String[])
 comment10.params=
 comment10.target=boolean\ getEnfermedad()
 comment11.params=enfermedad
 comment11.target=void\ setEnfermedad(boolean)
 comment12.params=
-comment12.target=void\ getReporte()
+comment12.target=java.lang.String[]\ getEnfermedades()
+comment13.params=enfermedades
+comment13.target=void\ setEnfermedades(java.lang.String[])
+comment14.params=
+comment14.target=void\ getReporte()
 comment2.params=
 comment2.target=java.lang.String\ getNombre()
 comment3.params=
@@ -25,4 +29,4 @@ comment8.params=
 comment8.target=int\ getEdad()
 comment9.params=edad
 comment9.target=void\ setEdad(int)
-numComments=13
+numComments=15
